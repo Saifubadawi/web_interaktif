@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(https://i.pinimg.com/736x/3c/3b/4c/3c3b4c998fbc182ca6d7ffc612eafe46.jpg);
+}
+
+nav {
+    background: #f5f3f3;
+    padding: 10px;
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #100d0d;
+}
+
+#nav-utama {
+    background-color: rgb(134, 134, 134);
+    border-radius: 50px;
+}
+
+#nav4 {
+    background-color: #f5f3f3;
+}
+
+#nav1 {
+    background: palevioletred;
+    border-radius: 50px;
+}
+
+#nav2 {
+    background: chocolate;
+    border-radius: 50px;
+}
+
+#nav3 {
+    background: rgb(242, 242, 104);
+    border-radius: 50px;
+}
+
+nav button {
+    padding: 10px 20px;
+    /* background-color: #4caf50; */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 0;
+    gap: 40px;
+    /* background akan dikontrol via JS */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+.image-section img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-section {
+    margin-left: 20px;
+    color: #100d0d;
+}
+
+#product-name {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-section img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .info-section {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav {
+        text-align: left;
+        padding: 10px;
+    }
+
+    nav button {
+        font-size: 10px;
+        padding: 6px 12px;
+        margin: 4px;
+        width: auto;
+    }
+}
